@@ -1,6 +1,6 @@
 <div class="image-about-header" id="kontakt">
 	<h1 class="uppercase greenish-blue" >Kontakt</h1>
-	<p class="black">Lirum...</p>
+	<p class="black">changes to branch</p>
 	
 </div>
 <div class="sk20-contact b-lazy" data-src="img/hero.jpg" data-src-small="img/hero_small.jpg">
