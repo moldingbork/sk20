@@ -1,0 +1,64 @@
+.sk20-hero {
+	background-image: url("../img/hero.jpg");
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 90vh;
+	position: relative;
+}
+
+
+.light-opacity {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(250,250,250, 0.7);
+}
+
+
+
+
+.always-centered {
+
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+} 
+
+.always-centered:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.35em;
+}
+
+.centered {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	text-align: center;
+} 
+
+.hero-content {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+@media (max-width: $large-grid) {
+	
+}
+
+@media (max-width: $medium-grid) {
+	.hero {
+		height: 70vh;
+	}
+}
+

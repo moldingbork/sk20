@@ -1,0 +1,129 @@
+
+/*
+	=======================
+	  FADE IN
+	=======================
+*/
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+.fade-in-quick {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+
+/*
+	=======================
+	  FADE OUT
+	=======================
+*/
+
+.page {
+      -moz-animation-name: fadeIn;
+      -webkit-animation-name: fadeIn;
+      -ms-animation-name: fadeIn;
+      animation-name: fadeIn;
+     
+    }
+
+.fade-out {
+  -moz-animation-name: fadeOut;
+  -webkit-animation-name: fadeOut;
+  -ms-animation-name: fadeOut;
+  animation-name: fadeOut; 
+   -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;  
+}
+
+@-moz-keyframes fadeOut { 0% { opacity: 1; visibility: visible; }  100% { opacity: 0; visibility: hidden; }} 
+@-webkit-keyframes fadeOut { 0% { opacity: 1; visibility: visible; }  100% { opacity: 0; visibility: hidden; }} 
+@-ms-keyframes fadeOut { 0% { opacity: 1; visibility: visible; } 100% { opacity: 0; visibility: hidden; }} 
+@-keyframes fadeOut { 0% { opacity: 1; visibility: visible; } 100% { opacity: 0; visibility: hidden;  }} 
+
+
+/*
+  =======================
+    LOADER
+  =======================
+*/
+
+.loader {
+  border: 2px solid $white; 
+  /* Light grey */
+  border-top: 2px solid $greenish-blue;
+  /* Blue */
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

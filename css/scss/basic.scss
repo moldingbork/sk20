@@ -1,0 +1,68 @@
+html {
+  
+} 
+
+body {
+  height: 100%;
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0); // remove highligt on mac mobile devices
+}
+
+.body-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+button {
+  border: none;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+
+.flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+
+ .b-lazy {
+    -webkit-transition: opacity 500ms ease-in-out;
+       -moz-transition: opacity 500ms ease-in-out;
+         -o-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+             max-width: 100%;
+               opacity: 0;
+}
+.b-lazy.b-loaded {
+               opacity: 1;
+}
+
+
+textarea, input[type="text"], input[type="button"], input[type="submit"] {-webkit-appearance: none; border-radius: 0;}
+
+
+.hide {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+

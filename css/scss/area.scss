@@ -1,0 +1,51 @@
+.area-grid {
+	overflow: hidden;
+}
+
+.area-grid .col {
+	position: relative;
+	min-height: 1px;
+	display: block;
+	float: left;
+	width: 50%; 
+	overflow: hidden;
+
+	padding: 0;
+}
+
+.area-grid .image-wrapper img {
+	max-width: 100%; 
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.image-wrapper:hover img {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 599px) { 
+	.area-grid .col {
+		width: 100%; 
+	}
+} 
+
+@media (max-width: $medium-grid) {
+	.image-wrapper {
+		height: auto !important;
+	}
+
+	.area-grid .col img {
+		width: 100%;
+		height: inherit !important
+	}
+}
+
+
+
+
+
+

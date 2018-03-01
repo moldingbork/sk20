@@ -1,0 +1,680 @@
+.sk20-modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(33, 40, 78, 0.95);
+	overflow-y: scroll;
+	
+	transition: opacity 0.5s, z-index 0s 0.5s;
+    width: 100vw;
+    z-index: -9999999; 
+    opacity: 0; 
+}
+
+body.stop-scroll { 
+		overflow: hidden;
+}
+
+.sk20-modal.active {
+	transition: opacity 0.5s;
+    width: 100%;
+    z-index: 999999; 
+    opacity: 1; 
+    -webkit-overflow-scrolling: touch;
+}
+
+[aria-hidden="true"] {     
+    transition: opacity 1s, z-index 0s 1s;
+    width: 100vw;
+    z-index: -9999999; 
+    opacity: 0;  
+}
+
+[aria-hidden="false"] {  
+    transition: opacity 1s;
+    width: 100%;
+    z-index: 999999; 
+    opacity: 1; 
+}
+
+.sk20-modal-wrapper {
+	height: 100%;
+	width: 100%;
+	padding: 5% 0% 5% 0%;
+}
+
+.sk20-module {
+	margin: auto;
+	position: relative;
+	width: 645px;
+	background-color: #f4f6f7;
+	padding: 24.55px 21px 24.55px 22.9px;
+	
+}
+
+
+.sk20-module h1 {
+	font-size: 18px;
+	line-height: 22px;
+	font-family: $GothamBold;
+	color: $secondary-color;
+	margin-top: 0px;
+}
+
+.sk20-module .module-line {
+	height: 1px;	
+	width: 20px;	
+	background-color: $greenish-blue;
+	margin-bottom: 14px;
+}
+
+.sk20-module p {
+	color: $secondary-color;
+	font-family: $GothamLight;
+}
+
+.prospect-form, .download-prospekt-wrapper {
+	margin-top: 34.5px;
+}
+
+.prospect-form-input {
+	position: relative;
+	width: 50%;
+}
+
+.prospect-form-textarea {
+	width: 100%;
+	position: relative;
+}
+
+.prospect-form-input input, .prospect-form-textarea textarea  {
+	height: 60px;	
+	width: 100%;	
+	border: 1px solid $border-grey;	
+	background-color: $white;
+	font-size: 16px;
+	line-height: 19px;
+	color: $secondary-color;
+	font-family: $GothamMedium;
+	text-indent: 8px;
+	padding-top: 15px;
+	outline: none;
+}
+
+.prospect-form-textarea textarea {
+	resize: none;
+	width: 100%;
+	height: 90px;
+	padding-top: 30px;
+}
+
+.prospect-form-input span, .prospect-form-textarea span {
+	font-size: 8px;
+	line-height: 10px;
+	font-family: $GothamMedium;
+	color: $secondary-color;
+	position: absolute;
+	text-transform: uppercase;
+	top: 7px;
+	left: 9px;
+}
+
+.prospect-form-row .submit {
+	border: none;
+	display: block;
+	font-size: 18px;
+	background: $greenish-blue;
+	padding: 9px 0px;
+	font-family: $GothamLight;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 22px;
+	height: 50px;
+	width: 235px !important;
+}
+
+.prospect-form-input:nth-child(1) {
+	padding-right: 4.5px; 
+}
+
+.prospect-form-input:nth-child(2) {
+	padding-left: 4.5px; 
+}
+
+.prospect-form-input:nth-child(2) span {
+	padding-left: 4.5px; 
+}
+
+.prospect-form-row:nth-child(3) {
+	margin-top: 8.5px;
+}
+
+.prospect-form-row:nth-child(4) {
+	margin-top: 33px;
+}
+
+.prospect-form-row:nth-child(5) {
+	margin-top: 34.23px;
+}
+
+.prospect-form-row:nth-child(6) {
+	margin-top: 30px;
+}
+
+.prospect-form-row:nth-child(7) {
+	margin-top: 10px;
+}
+
+
+.lejemaal-download-prospect, .lejemaal-download-prospect:hover, .lejemaal-download-prospect:active {
+	color: $greenish-blue;
+	font-size: 14px;
+	line-height: 17px;
+	font-family: $GothamMedium;
+	position: relative;
+}
+
+.lejemaal-download-prospect .underline {
+	height: 1px;
+	width: 22px;
+	background-color: $greenish-blue;
+	position: absolute;
+	bottom: -2px;
+	left: 0px;
+}
+
+#download-prospect-loader.loader {
+	margin: auto;
+}
+
+.module-contact-person {
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+
+.sk20-modal-person {
+	background-color: rgba(250, 250, 250, 0.95);
+}
+
+.sk20-modal-person-image {
+	background-color: #ffffff;
+	height: 280px;
+	width: 210px;
+	background-image: url("../img/kontakt/Kirstine.png");
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.sk20-modal-person-info {
+	padding: 20px 30px 50px 30px;
+}
+
+.sk20-modal-person p, .sk20-modal-person a, .sk20-modal-person a:active, .sk20-modal-person a:hover  {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0;
+	font-family: $GothamBook;
+	color: $secondary-color;
+}
+
+.sk20-modal-person p.name{
+	font-family: $GothamBold;
+}
+
+.modalClose-wrapper {
+	position: absolute;
+    height: 25px;
+    width: 30px;
+    right: 21px;
+    border: none;
+    background: none;
+}
+
+.modal-close {
+  	background: url("fallback.png") no-repeat center;
+	background-image: url("../img/elements/Luk_menu.svg");
+	background-size: contain;
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+}
+
+
+@media (max-width: $allSmartPhones) { 
+	.sk20-module {
+		width: 95%;
+		
+	}
+}
+
+/*
+
+old
+
+*/
+/*
+.prospekt-modal-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(33, 40, 78, 0.95);
+	z-index: 11;
+}
+
+body.stop-scroll { 
+		overflow: hidden;
+		overflow: auto;
+	}
+
+
+
+ 
+.modal {
+	overflow-y: scroll;
+	height: 100%;	
+}
+
+
+
+.module-wrapper {
+	position: absolute;
+	top: 5%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	
+}
+
+.modal.active {
+	display: block;
+}
+
+.modal {
+	
+}
+
+.modal .cover {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	background-color: rgba(33, 40, 78, 0.75);
+	transition: opacity 0.4s ease-in-out;
+}
+
+.modal .cover.active  {
+	opacity: 1;
+}
+
+.module {
+	float: left;
+	width: 100%;
+	margin: 0;
+	position: relative;
+}
+
+.modal .module {
+	border: 0;
+	position: relative;
+	z-index: 3;
+	width: 645px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f4f6f7;
+	opacity: 0 !important;
+	transition: opacity .5s ease-in-out;
+}
+
+.modal {
+	.module {
+            height: 100%;
+            overflow: scroll;
+        }
+}
+
+.modal .moduleold {
+	border: 0;
+	position: absolute;
+	z-index: 3;
+	top: 25%;
+	left: 50%;
+	width: 645px;
+	opacity: 0;
+	margin: -100px 0 0 -322.5px;
+	background-color: #f4f6f7;
+	opacity: 0 !important;
+    transition: opacity .5s ease-in-out;
+}
+
+.modal .module.prospect {
+	padding: 24.55px 21px 24.55px 22.9px;
+}
+.modal.active .module.open {
+	opacity: 1 !important;
+}
+
+.modal.active .module {
+	opacity: 1;
+}
+
+.module.prospect h1 {
+	font-size: 18px;
+	line-height: 22px;
+	font-family: $GothamBold;
+	color: $secondary-color;
+	margin-top: 0px;
+}
+
+.module.prospect .module-line {
+	height: 1px;	
+	width: 20px;	
+	background-color: $greenish-blue;
+	margin-bottom: 14px;
+}
+
+.module.prospect p, .module.prospect p.contact-person-info a, .module.prospect p, .module.prospect .contact-person-info a:hover, .module.prospect p, .module.prospect .contact-person-info a:active {
+	color: $secondary-color;
+	font-family: $GothamLight;
+}
+
+.prospect-form, .download-prospekt-wrapper {
+	margin-top: 34.5px;
+}
+
+.prospect-form-input {
+	position: relative;
+	width: 50%;
+}
+
+.prospect-form-textarea {
+	width: 100%;
+	position: relative;
+}
+
+.prospect-form-input input, .prospect-form-textarea textarea  {
+	height: 60px;	
+	width: 100%;	
+	border: 1px solid $border-grey;	
+	background-color: $white;
+	font-size: 16px;
+	line-height: 19px;
+	color: $secondary-color;
+	font-family: $GothamMedium;
+	text-indent: 8px;
+	padding-top: 15px;
+	outline: none;
+}
+
+.prospect-form-textarea textarea {
+	resize: none;
+	width: 100%;
+	height: 90px;
+	padding-top: 30px;
+}
+
+.prospect-form-input span, .prospect-form-textarea span {
+	font-size: 8px;
+	line-height: 10px;
+	font-family: $GothamMedium;
+	color: $secondary-color;
+	position: absolute;
+	text-transform: uppercase;
+	top: 7px;
+	left: 9px;
+}
+
+.prospect-form-row .submit {
+	border: none;
+	display: block;
+	font-size: 18px;
+	background: $greenish-blue;
+	padding: 9px 0px;
+	font-family: $GothamLight;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 22px;
+	height: 50px;
+	width: 235px !important;
+}
+
+.prospect-form-input:nth-child(1) {
+	padding-right: 4.5px; 
+}
+
+.prospect-form-input:nth-child(2) {
+	padding-left: 4.5px; 
+}
+
+.prospect-form-input:nth-child(2) span {
+	padding-left: 4.5px; 
+}
+
+.prospect-form-row:nth-child(3) {
+	margin-top: 8.5px;
+}
+
+.prospect-form-row:nth-child(4) {
+	margin-top: 33px;
+}
+
+.prospect-form-row:nth-child(5) {
+	margin-top: 34.23px;
+}
+
+.prospect-form-row:nth-child(6) {
+	margin-top: 30px;
+}
+
+.prospect-form-row:nth-child(7) {
+	margin-top: 10px;
+}
+
+
+.lejemaal-download-prospect, .lejemaal-download-prospect:hover, .lejemaal-download-prospect:active {
+	color: $greenish-blue;
+	font-size: 14px;
+	line-height: 17px;
+	font-family: $GothamMedium;
+	position: relative;
+}
+
+.lejemaal-download-prospect .underline {
+	height: 1px;
+	width: 22px;
+	background-color: $greenish-blue;
+	position: absolute;
+	bottom: -2px;
+	left: 0px;
+}
+
+#download-prospect-loader.loader {
+	margin: auto;
+}
+
+.module-contact-person {
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+
+.contact-person-info a {
+
+}
+
+/*
+
+=================================================
+	Error handling
+=================================================
+
+*/
+
+.prospect-form-row.checkbox label.error::before, .prospect-form-input .error {
+	border-color: #f0b2c5;
+	background-color: #fdf8fa
+}
+
+
+
+
+/*
+
+=================================================
+	Checkbox
+=================================================
+
+*/
+
+.checkbox input[type=checkbox] {
+	margin-left: 0px;
+}
+
+label, label:active {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: $GothamLight !important;
+	font-weight: 500;
+	color: $secondary-color;
+}
+
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #d2d2d2;
+	background: $white;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✓';/*'✔';*/
+  position: absolute;
+  top: 3.5px; 
+  left: 4px;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: $greenish-blue;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+
+
+
+/*
+    =======================
+      Responsive
+    =======================
+*/
+
+
+@media (max-width: $extra-large-grid) {
+     
+
+}
+
+@media (max-width: 1100px) {
+    
+}
+
+@media (max-width: 1080px) {
+   
+}
+
+/*
+    =======================
+      Mobile
+    =======================
+*/
+
+@media (max-width: $allSmartPhones) {
+
+	.module-wrapper {
+		top: 0%;
+		padding-top: 25%;
+		padding-bottom: 1000px;
+	}
+
+	#module-box {
+		height: 900px; 
+	}
+
+	.modal .module {
+		top: 15%;
+		left: 5%;
+		width: 90%;
+		overflow-y: scroll;
+		margin: 0;
+	}
+
+	.prospect-form-row {
+		display: block;
+	}
+
+	.prospect-form-input {
+		width: 100%;
+		padding: 0px !important;
+		margin-top: 10px;
+	}
+
+	.prospect-form-row, .prospect-form-row:nth-child(4) {
+		margin: 0;
+	}
+
+	.modal .module.prospect {
+		padding: 20px;
+	}
+}
+
+
+

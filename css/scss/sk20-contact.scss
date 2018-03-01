@@ -1,0 +1,160 @@
+.sk20-contact {
+	background-image: url("../img/hero.jpg");
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 100%;
+	position: relative;
+}
+
+.sk20-contact-wrapper {    
+	padding: 7% 81px 80px 81px;
+}
+
+.sk20-contact-header {
+	margin-bottom: 35px;
+}
+
+.sk20-contact-header h3 {
+	color: $secondary-color;
+}
+
+.sk20-contact-header .header-line {
+  width: 20px;
+  height: 1px;
+  background-color: $secondary-color;
+  margin-bottom: 15px;
+}
+
+.sk20-contact-person {
+	background-color: rgba(250, 250, 250, 0.95);
+}
+
+.sk20-contact-person:nth-child(1) {
+	margin-right: 15px;
+}
+
+
+.sk20-contact-person-image {
+	background-color: $white;
+	height: 280px;
+	width: 100%;
+	background-image: url("../img/kontakt/Kirstine.png");
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right 20px top;
+}
+
+.sk20-contact-person-image.monica {
+	background-image: url("../img/kontakt/Monica.png");
+}
+
+.sk20-contact-person-info {
+	padding: 20px 30px 50px 30px;
+}
+
+.sk20-contact-person p, .sk20-contact-person a, .sk20-contact-person a:active, .sk20-contact-person a:hover  {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0;
+	font-family: $GothamBook;
+	color: $secondary-color;
+}
+
+.sk20-contact-person p.name {
+	font-family: $GothamBold;
+}
+
+
+
+@media (max-width: $allSmartPhones) {
+  	
+	.sk20-contact-header h3 {
+		font-size: 45px;
+		line-height: 45px;
+	}
+
+  	.sk20-contact-wrapper {
+    	padding: 30px 15px 70px 15px;
+  	}
+  
+} 
+
+@media (max-width: 515px) {
+	.sk20-contact-person { 
+		width: 100% !important;
+	}
+
+	.sk20-contact-persons-wrapper {
+		display: block;
+	}
+
+	.sk20-contact-person-image {
+		width: 150px;
+		height: 210px;
+	}
+
+	.sk20-contact-person:nth-child(1) {
+		margin-bottom: 15px;
+		margin-right: 0px;
+	}
+
+	.sk20-contact-person-image {
+		background-position: right 0px top;
+	}
+
+
+	.sk20-contact-person {
+		display: -webkit-inline-box;
+		display: -webkit-inline-box;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		width: 330px;
+	}
+
+	.sk20-contact-person-info {
+		padding: 20px 10px 0px 10px;
+	}
+
+}
+
+
+@media (max-width: 374px) {
+	.sk20-contact-persons-wrapper {
+		display: block;
+	}
+
+	.sk20-contact-person-image {
+		width: 150px;
+		height: 173px;
+	}
+
+	.sk20-contact-person:nth-child(1) {
+		margin-bottom: 15px;
+		margin-right: 0px;
+	}
+
+
+	.sk20-contact-person {
+		display: -webkit-inline-box;
+		display: -webkit-inline-box;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		width: 290px;
+	}
+
+	.sk20-contact-person-info {
+		padding: 20px 10px 0px 10px;
+	}
+
+}

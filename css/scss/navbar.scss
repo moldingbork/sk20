@@ -1,0 +1,259 @@
+.fixed-top {
+	padding-left: 47px;
+	background-color: $secondary-color;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	z-index: 99 !important;
+	min-height: 44px;
+	
+}
+
+.navbar-burger {
+	background-image: none !important;
+	background: none !important;
+	color: inherit;
+	border: none;
+	padding: 0 !important; 
+	font: inherit;
+	cursor: pointer;
+	outline: inherit !important;
+	height: 17px;
+	width: 21px;
+}
+
+.navbar-toggler {
+	padding: 8px 15px !important;
+}
+
+.navbar-burger .line {
+	height: 3px;
+	width: 21px;
+	background-color: $white;
+	margin-bottom: 4px;
+}
+
+.navbar-burger .half-line {
+	width: 11px;
+}
+
+.navbar-expanded {
+	-webkit-transition: background-color 0.8s linear;
+	-o-transition: background-color 0.8s linear;
+	transition: background-color 0.8s linear;
+	background-color: $white;
+}
+
+.navbar-closed {
+	-webkit-transition: background-color 0.8s linear;
+	-o-transition: background-color 0.8s linear;
+	transition: background-color 0.8s linear;
+	background-color: $secondary-color;
+}
+
+.navbar-toggler-icon {
+	cursor: pointer;
+}
+
+.logo-item {
+	padding: 2px 90px 0 0 !important;
+}
+
+.logo-wrapper {
+	padding: 0 !important;
+}
+
+.navbar-logo {
+	width: 180px;
+}
+
+.navbar-close-icon {
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	background: url("fallback.png") no-repeat center;
+	background-image: url("../img/elements/Luk_menu.svg");
+	background-size: contain;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+}
+
+.navbar-close-icon.not-active {
+	display: none;
+}
+
+
+
+ul.navbar-nav li a {
+	font-family: $GothamMedium;
+	text-transform: uppercase; 
+	font-weight: 400;  
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+li.nav-item {
+	padding-right: 30px;
+}
+
+ul.navbar-nav li a.nav-link:hover {
+	color: $greenish-blue !important;
+}
+
+.navbar-light .navbar-toggler {
+	border: none;
+}
+
+.navbar-prospect {
+	position: fixed;
+	right: 70px;
+	z-index: 120;
+	height: 60px;
+}
+
+
+.navbar-prospect .prospect {
+	width: 168px;
+	height: 100%;
+	text-align: center;
+	color: white;
+	text-transform: uppercase; 
+	font-family: $GothamMedium;
+	letter-spacing: 0.5px;
+	font-size: 13px;
+	line-height: 15px;
+	cursor: pointer;
+	z-index: 11;
+	background-color: $greenish-blue;
+	border-radius: 0;
+} 
+
+
+.navbar-light .navbar-nav .nav-link {
+	color: $white;
+}
+
+.nav-link.active {
+	color: $greenish-blue !important;
+}
+
+.navbar-toggler-icon {
+	width: 1.3em;
+}
+
+.navbar-collapse.collapse {
+	//padding-bottom: 25px;
+
+}
+
+.no-fade {
+	display:block !important;
+}
+
+@media (max-width: 1300px) {
+	li.nav-item {
+		padding-right: 15px;
+	}
+}
+
+@media (max-width: $extra-large-grid) {
+
+	.navbar-logo {
+		width: 150px;
+	}
+
+	.logo-item {
+		padding: 5px 45px 0 0 !important; 
+	}
+
+	
+}
+
+@media (max-width: 1100px) {
+
+	li.nav-item {
+		padding-right: 5px;
+	}
+
+	.navbar-logo {
+		width: 130px;
+	}
+
+	.logo-item {
+		padding: 5px 25px 0 0 !important; 
+	}
+}
+
+@media (max-width: 1030px) {
+
+	.navbar-logo {
+		width: 120px;
+	}
+
+	.logo-item {
+		padding: 4px 10px 0 0 !important; 
+	}
+}
+
+
+
+@media (max-width: $large-grid) {
+  	.fixed-top {
+		padding-left: 5px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+
+	}
+
+	ul.navbar-nav.mr-auto {
+		margin-top: 20px;
+	}
+
+	.nav-link.logo-wrapper {
+		display: none;
+	}
+
+	.navbar-light .navbar-nav .nav-link {
+		color: $secondary-color;
+	}
+
+	.navbar-prospect {
+		right: 0px;
+		height: 44px;
+	}
+
+	.navbar-prospect .prospect { 
+		font-size: 11px;
+	}
+
+	.navbar-nav .nav-link {
+		padding-left: 15px;
+		padding-top: 11px;
+	}
+
+	ul.navbar-nav li a {
+		font-size: 16px;
+		line-height: 21px;
+		font-weight: 900;
+		letter-spacing: 7px;
+		display: block;
+		padding: 8px 0;
+		color: $secondary-color;
+		opacity: 1;
+	}
+	
+	ul.navbar-nav li:last-child {
+    	padding-bottom: 30px;
+	}
+
+	ul.navbar-nav li:first-child {
+    	padding-top: 20px;
+	}
+
+
+	
+
+}
